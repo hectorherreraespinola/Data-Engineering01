@@ -30,18 +30,13 @@ Los datos serán provistos en archivos de diferentes extensiones, como *csv* o *
 
 Las consultas a realizar son:
 
-+ Máxima duración según tipo de film (película/serie), por plataforma y por año:
-    El request debe ser: get_max_duration(año, plataforma, [min o season])
++ Máxima duración según tipo de film (película/serie), por plataforma y por año. El request debe ser: get_max_duration (año, plataforma, [min o season])
 
-+ Cantidad de películas y series (separado) por plataforma
-    El request debe ser: get_count_plataform(plataforma)  
++ Cantidad de películas y series (separado) por plataforma. El request debe ser: get_count_plataform(plataforma)  
   
-+ Cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo.
-    El request debe ser: get_listedin('genero')  
-    Como ejemplo de género pueden usar 'comedy', el cuál deberia devolverles un cunt de 2099 para la plataforma de amazon.
++ Cantidad de veces que se repite un género y plataforma con mayor frecuencia del mismo. El request debe ser: get_listedin('genero'). Como ejemplo de género pueden usar 'comedy', que deberia devolverles un cunt de 2099 para la plataforma de Amazon.
 
-+ Actor que más se repite según plataforma y año.
-  El request debe ser: get_actor(plataforma, año)
++ Actor que más se repite según plataforma y año. El request debe ser: get_actor(plataforma, año)
 
 ## **Pasos del proyecto**
 
