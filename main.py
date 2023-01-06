@@ -21,9 +21,6 @@ async def index():
 async def about():
     return 'API creada con FastAPI y uvicorn'
 
-# En todas las funciones que usen formato str, se eliminan las ' interiores con el comando replace, y se aplica la primer
-# letra mayúscula, para que coincida con el Dataset, independiente de cómo lo ingresa el cliente
-
 
 # URL para realizar la consulta localhost:8000/get_max_duration(2018,'Hulu','min')
 @app.get('/get_max_duration({year},{platform},{tipo})')
@@ -37,10 +34,11 @@ async def get_max_duration(
     tipo = tipo.lower()
     if tipo == 'min': tipo = 'Movie'    # Determinamos si es pelicula o serie de acuerdo al parámetro
     elif tipo == 'Season': tipo = 'TV Show'
-    # Aplicamos una máscara de acuerdo a los parámetros
-    Max_duration = DF[(DF.Plataform == platform) & (DF.Release_Year == year) & ((DF.Type == tipo))]
-    # Retornamos el valor del título
-    return DF.loc[Max_duration.Duration.idxmax()].Title
+    
+    DF1=DF[(DF['Release_Year']== year) & (DF['Plataform']== platform)] #filtro por año y plataforma
+    DF2 =DF1.Movie_Duration.max()
+    Titulo = DF1[DF1.Movie_Duration==DF2]['Title'].to_list()
+    return Titulo[0]
     
 
 
