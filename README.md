@@ -6,25 +6,35 @@
 Fecha actualización 6/01/2023
 <hr>  
 
-# <h1 align="center">**`ETL-FASTAPI- DOCKER EN PLTAFORMAS DE STREAMING`**</h1>
+# <h1 align="center">**`EDA_ELT CON PYTHON-FASTAPI-DOCKER EN PLTAFORMAS DE STREAMING`**</h1>
 
 ### **INTRODUCCION**
-Proyecto individual como parte del bootcamp de ciencia de datos de Henry.
-El proyecto consiste en realizar una ingesta de datos desde varias fuentes entregado por la cátedra, para aplicar las transformaciones necesarias y realizar una limpieza de datos que permita realizar consultas a través de una API en un entorno virtual dockerizado.)
-Link al repositorio del proyecto: https://github.com/HX-FAshur/PI01_DATA05
-Los archivos se encuentra disponibles en este repositorio y la información será sobre películas y series de las siguientes plataformas:
-
+Este proyecto es parte de la etapa de Labs de la carrera de Ciencia de Datos de la acamedia Soy Henry.
+En esta ocasión se provee de fuentes de información asociada a plataformas de streams, tales como:
 - Amazon Prime Video
 - Disney Plus
 - Hulu
 - Netflix
+ 
 
-[Datasets]("https://github.com/hectorherreraespinola/Proyecto_Individual_01_Soy-Henry-/tree/main/Datasets")
+
+
+### **OBJETIVO**
+El proyecto consiste en realizar una ingesta de datos desde varias fuentes entregado por la cátedra, para aplicar las transformaciones en los datasets que permita realizar consultas a través de una API (en un entorno virtual dockerizado.)
+En el siguiente link tendrán acceso al repositorio del proyecto original: [Enunciado_Proyecto]("https://github.com/HX-FAshur/PI01_DATA05")
+Los archivos se encuentra disponibles en este repositorio y la información será sobre películas y series de las siguientes plataformas:
+
+Para tener detalles de los archivos pueden abrir los [Datasets]("https://github.com/hectorherreraespinola/Proyecto_Individual_01_Soy-Henry-/tree/main/Datasets")
 
  
 
 
 ### **PROPUESTA DE TRABAJO**
+La propuesta de trabajo se realizará en las siguientes etapas:
+1. Exploratoy Data Analysis (EDA-ETL) y Extract-Tranform and Load con el lenguaje Python.
+2. Generación/Creación de una API para realizar consultas en un entorno dockerizado.
+3.  
+4. Realizar un deployment en Mogenius
 
 ## EDA-ETL
 Como punto inicial se procederan a cargar los datos mediante el uso de la librería pandas. En esta instancia se realizara un análisis exploratirio de los datos y a su vez se realizarán las 
