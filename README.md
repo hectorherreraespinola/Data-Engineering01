@@ -1,12 +1,13 @@
 
-<h1> **INDIVIDUAL PROJECT N°1** </h1>###
-<h1> **Autor: HECTOR JAVIER HERRERA ESPINOLA** </h1>
+## <h1> **INDIVIDUAL PROJECT N°1** </h1>
+
+## <h1> **Autor: HECTOR JAVIER HERRERA ESPINOLA** </h1>
 
 
-Last updated 21/01/2023
+## Last updated 21/01/2023
 <hr>  
 
-<h1 align="center">**`DATA ENGINEERING WITH PYTHON-FASTAPI-DOCKER FOR DATA OF STREAMING PLATFORMS`**</h1>
+### <h1 align="center">**`DATA ENGINEERING WITH PYTHON-FASTAPI-DOCKER FOR DATA OF STREAMING PLATFORMS`**</h1>
 
 ### **INTRODUCTION**
 This project is part of the Labs stage of the Data Science course at acamedia Soy Henry.
