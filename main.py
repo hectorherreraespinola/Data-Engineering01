@@ -9,7 +9,7 @@ app = FastAPI()
 @app.on_event('startup')
 def startup():
     global DF
-    DF = pd.read_csv(r'Datasets\movies_and_series.csv')
+    DF = pd.read_csv(r'Datasets/movies_and_series.csv')
 
 # Loading the information
 @app.get('/')
