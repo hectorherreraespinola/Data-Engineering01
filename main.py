@@ -14,7 +14,7 @@ def startup():
 # Loading the information
 @app.get('/')
 async def index():
-    return {'Individual Proyect of Hector Herrera Espinola, Data Science Bootcamp in SoyHenry'}
+    return {'Welcome to the streaming movies information site!'}
 
 # Loading information for the API
 @app.get('/about')
@@ -27,13 +27,13 @@ async def about():
 async def get_max_duration(
                             year:int,
                             platform:str,
-                            tipo:str):
+                            type:str):
     platform = platform.replace("'","")
     platform = platform.capitalize()
-    tipo = tipo.replace("'","")
-    tipo = tipo.lower()
-    if tipo == 'min': tipo = 'Movie'    # Determinamos si es pelicula o serie de acuerdo al parámetro
-    elif tipo == 'Season': tipo = 'TV Show'
+    type = type.replace("'","")
+    type = type.lower()
+    if type == 'min': type = 'Movie'    # Determinamos si es pelicula o serie de acuerdo al parámetro
+    elif type == 'Season': type = 'TV Show'
     
     DF1=DF[(DF['RELEASE_YEAR']== year) & (DF['PLATFORM']== platform)] #filtro por año y plataforma
     DF2 =DF1.MOVIE_DURATION.max()
